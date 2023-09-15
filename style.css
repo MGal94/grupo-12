@@ -1,13 +1,20 @@
 body{
-    background-color: #ebf3fc
+    background-color: #ebf3fc;
+    font-family: sans-serif;
+    margin: 0;
+    
 }
 /* Estilos header */
 header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
     grid-area: header;
     background-color: #3498db;
     color: #fff;
     padding: 20px;
     text-align: end;
+    align-items: center;
 }
 /* Estilo links header */
 header a {
@@ -24,12 +31,19 @@ nav a:hover {
 }
 
 .logo {
-    grid-area: header;
+    display: flex;
     text-align: left;
+    align-items: center;
 
+}
+.logo img {
+    display: flex;
+    height: 50px;
+    margin-right: 10px;
 }
 
 footer {
+   
     text-align: center;
     background-color: #3498db;
 }
@@ -66,18 +80,33 @@ footer {
     min-height: 100vh;
 }
 
-.fondo h1{
-    position: absolute;
-    top: 150px; left: 400px;
-    color: #f5f5f5;
-    text-shadow: #000000;
-    font-size: 200px
+
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+
+    }
+    nav {
+        padding: 10px 0px;
+    }
 }
 
-h2{
-    position: absolute;
-    top: 400px; left: 400px;
-    color: #f5f5f5;
-    text-shadow: #000000;
-    font-size: 90px
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("bici-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
+
+#hero h1 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: #000000;
+    text-decoration: solid black 5px;
