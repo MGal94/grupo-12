@@ -1,9 +1,3 @@
-body{
-    background-color: #ebf3fc;
-    font-family: sans-serif;
-    margin: 0;
-    
-}
 /* Estilos header */
 header {
     display: flex;
@@ -30,6 +24,7 @@ nav a:hover {
     color: #0075EA;
 }
 
+/* Logo página */
 .logo {
     display: flex;
     text-align: left;
@@ -38,14 +33,60 @@ nav a:hover {
 }
 .logo img {
     display: flex;
-    height: 50px;
+    height: 100px;
     margin-right: 10px;
 }
 
+/* Estilos del body */
+body{
+    background-color: #ebf3fc;
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    
+}
+
+/* Estilos banner principal index */
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("bici-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1, #hero h2 {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-shadow: #000000;
+    flex-direction: column;
+    
+}
+
+/* Estilos footer y redes */
 footer {
-   
     text-align: center;
     background-color: #3498db;
+    position: absolute;
+    bottom:0;
+    width: 100%;
 }
 
 .redes {
@@ -79,34 +120,3 @@ footer {
         "footer";
     min-height: 100vh;
 }
-
-
-
-@media (max-width: 700px) {
-    header{
-        flex-direction: column;
-
-    }
-    nav {
-        padding: 10px 0px;
-    }
-}
-
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: url("bici-fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#hero h1 {
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-    text-shadow: #000000;
-    text-decoration: solid black 5px;
