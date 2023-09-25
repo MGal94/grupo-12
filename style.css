@@ -31,11 +31,6 @@ nav a:hover {
     align-items: center;
 
 }
-.logo img {
-    display: flex;
-    height: 100px;
-    margin-right: 10px;
-}
 
 /* Estilos del body */
 body{
@@ -45,6 +40,7 @@ body{
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
+    text-align:center; 
     
 }
 
@@ -99,9 +95,9 @@ footer {
     text-decoration: none;
     color: beige;
     font-size:20px;
-    width: 40px;
-    height: 40px;
-    line-height:40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     background: #0075EA;   
     border-radius: 50%;
@@ -116,7 +112,8 @@ footer {
     grid-template-areas:
         "header"
         "main"
-        "article"
+        "sidebar"
+        "body"
         "footer";
     min-height: 100vh;
 }
@@ -124,7 +121,7 @@ footer {
 /* estilo formulario */
 form{
     align-items: center;
-    background-color: #0075EA;
+    background-color: #f1f4f7;
 }
 input {
     border: 1px solid blue;
@@ -133,12 +130,13 @@ input {
     border-radius: 20px;
 }
 input [type= "button"]{
-    background-color: blue
+    background-color: blue ;
     border: none;
     border-radius: 20px;
     font-weight: bold;
     color: black;
 }
+
 input [type= "button"]: hover {
     background-color: green;
 }
