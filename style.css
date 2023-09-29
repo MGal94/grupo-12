@@ -1,3 +1,9 @@
+.contenedor {
+    width: 100%;
+    margin:0 auto;
+    overflow:hidden;
+}
+
 /* Estilos header */
 header {
     display: flex;
@@ -48,7 +54,7 @@ body{
 @media (max-width: 700px) {
     header{
         flex-direction: column;
-
+        
     }
     nav {
         padding: 10px 0px;
@@ -62,34 +68,55 @@ body{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: url("bici-fondo.jpg");
+    background-image: url("bici-fondo.jpg") ;
+    opacity:0.9;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
-#hero h1, #hero h2 {
+ #hero h2 {
     font-size: 70px;
-    color: rgb(255, 255, 255);
-    text-shadow: #000000;
+    color: rgb(248, 248, 248);
+    text-shadow: 1px 1px 4px black;
     flex-direction: column;
+    z-index: 1;
     
 }
+.boton_tienda a {
+    color: beige;    
+    font-size:25px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #0075EA;   
+    border-radius: 10px ;
+    box-shadow: 2px 2px 5px rgba(0,0,.5);
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.boton_tienda a:hover {
+    color: #80a8ff;
+    }
 
 /* Estilos footer y redes */
 footer {
+    width: 100%;
+    margin:0 auto;
+    overflow:hidden;
     text-align: center;
     background-color: #3498db;
     position: absolute;
-    bottom:0;
-    width: 100%;
+   
 }
 
 .redes {
-    min-width: 700px;
+    min-width: 100%;
     display: flex;
     justify-content:center;
     margin: 10px;
+
 }
 .redes a{
     text-decoration: none;
@@ -103,19 +130,6 @@ footer {
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,.5);
     margin: 10px;
-}
-
-.contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "body"
-        "footer";
-    min-height: 100vh;
 }
 
 /* estilo formulario */
@@ -137,6 +151,34 @@ input [type= "button"]{
     color: black;
 }
 
-input [type= "button"]: hover {
+input [type= "button"] hover {
     background-color: green;
+}
+
+
+/*Estilos de tienda*/
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px
+}
+
+.item{
+    border-radius: 50px 0px 50px 0px;
+}
+
+.item{
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.20);
+}
+
+.info-product{
+    padding: 15px 30px;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px 0px 50px 0px;
 }
