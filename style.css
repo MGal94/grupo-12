@@ -1,4 +1,4 @@
-/* Estilos Generales NUEVOS */
+/* Estilos Generales */
 * {
     box-sizing: border-box;
     margin: 0 ;
@@ -9,9 +9,11 @@
  p {
     font-size: 14px;
     color: black;
+    
 }
 .contenedor, body {
     margin: 0;
+    padding: 0;
     width: 100%;
     background-color: #4f5554;
 }
@@ -19,11 +21,11 @@ body {
     background-color: #626867;
 }
 /* Estilos del header  */
-.logo {
-    padding: 10px;
+.logo h2 {
+    padding: 10px 10px 0 10px;
     margin: 0;
     text-align: start;
-
+    font-family: 'Dancing Script', cursive;
 }
 .contenedor nav {
     margin: 10px;
@@ -43,13 +45,13 @@ body {
 footer{
     width: 100%;
     margin:0;
+    padding: 0;
     overflow:hidden;
     text-align: center;
     position: fixed;
     bottom: 0;
     background-color: #4f5554;
 }
-
 .redes{
     display: flex;
     align-items:center;
@@ -79,10 +81,10 @@ footer{
     flex-direction: column;
     height: 81.5vh;
     width: 100%;
-    background-image: url("bici-fondo.jpg") ;
+    background-image: url("bici-fondo3.jpg") ;
     opacity:0.9;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: reverse;
  }
 #hero h2 {
     display: flex;
@@ -92,7 +94,6 @@ footer{
     position: relative;
     -webkit-text-stroke: 0.7px black;
 }
-
 .boton_tienda > a {
     display: flex;
     justify-content: center;
@@ -109,7 +110,6 @@ footer{
 .boton_tienda a:hover {
     color: #80a8ff;
     } 
-
 /*Sobre Nosotros*/
 .nosotros {
     display: flex;
@@ -118,7 +118,6 @@ footer{
     margin: 10px;
     padding: 10px;
 }
-
 /*Ubicacion*/
 .mapa {
     display: grid;
@@ -136,37 +135,31 @@ footer{
 /*Tienda*/
 .container-items{
     display: grid;
-    grid-template-columns: 1;
-    position: inherit;
-    gap: 20px;
-    margin: 20px;
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    padding: 15px 30px; 
     
 }
-
 .item{
     border-radius: 10px;
+    background-color: #797a7b;
 }
-
 .item:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
-
 .item img{
     width: 100%;
-    height: 300px;
+    height: 75vw;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
 }
-
 .item figure{
     overflow: hidden;
 }
-
 .item:hover img{
     transform: scale(1.2);
 }
-
 .info-product{
     padding: 15px 30px;
     line-height: 2;
@@ -174,12 +167,10 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
-
 .precio{
     font-size: 18px;
     font-weight: 900;
 }
-
 .info-product button{
     border: none;
     background: none;
@@ -187,4 +178,97 @@ footer{
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+}
+/*Contacto*/
+.titulo-formulario {
+    text-align: center;
+    background-color: #626867;
+    padding: 30px;
+}
+.formulario {
+    padding: 0 30%;
+    background-color:  #626867;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+b {
+    text-align: center;
+}
+.card {
+    text-align: center;
+}
+
+/*Media queries*/
+@media screen and (min-width: 720px) {
+    /*Tienda*/
+    .container-items { 
+        display: grid;
+        grid-template-columns: 33% 33%;
+        grid-auto-rows: max-content;
+        height: 10px;
+    }
+    .item img{
+        width: 100%;
+        height: 5%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+        
+}
+
+@media screen and (min-width: 1440px) {
+ /*Tienda*/
+    .container-items { 
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        height: 10px;
+        align-items: center;
+    }
+    .item img{
+        width: 100%;
+        height: 5%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+   /*Home*/ 
+    #hero {
+        width: 100%;
+        background-image: url("bici-fondo3.jpg") ;
+        opacity:0.9;
+        margin: 0;
+        padding: 0;
+
+     }
 }

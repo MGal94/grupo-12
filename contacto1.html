@@ -2,33 +2,37 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twelve Bikes</title>
-    <!--<link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <script src="https://kit.fontawesome.com/a3dd88338c.js" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, , user-scalable=no , initial-scale=1.0 , maximum-scale=1.0, minimum.scale=1.0">
+  <title>Twelve Bikes</title>
+  <link rel="stylesheet" href="style.css"> <!--Estilos css-->
+  <link rel="icon" href="favicon.ico"> <!--Favicon-->
+  <script src="https://kit.fontawesome.com/a3dd88338c.js" crossorigin="anonymous"></script> <!--Iconos redes Fontawesome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div class="logo">
-        <h2>Twelve Bike's store</h2>
-    </div>
-    <nav class="link">
-         <a href="index.html">Home</a>
-         <a href="nuestraHistoria.html">Nuestra historia</a>
-         <a href="ubicacion.html">Ubicacion</a>
-         <a href="contacto1.html">Contacto</a>
-         <a href="tienda.html">Tienda</a>
-    </nav>           
-</header>
+
 <body>
-    <div id="hero">
-        <h4> Contactate con Twelve Bike´s Store </h4>
-        <h4> Completa el siguiente formulario y te contactaremos a la brevedad!</h4>
+  <div class="contenedor">
+    <header>
+        <div class="logo">
+            <h2>Twelve Bike's store</h2>
+        </div>
+        <nav class="link">
+            <a href="index.html">Home</a>
+            <a href="nuestraHistoria.html">Nuestra historia</a>
+            <a href="ubicacion.html">Ubicacion</a>
+            <a href="contacto1.html">Contacto</a>
+            <a href="tienda.html">Tienda</a>
+        </nav>           
+    </header>
+      
         <section id="Formulario">
+          <div class="titulo-formulario">
+            <h4> Contactate con nosotros</h4>
+            <p> Completa el siguiente formulario y te contactaremos a la brevedad!</p>
+          </div>      
             <form id="formulario" class="formulario needs-validation" novalidate>
                
                 <form class="row g-3 needs-validation" novalidate></form>
@@ -60,9 +64,9 @@
                 <div class="abs-center">
                 <input type="color" class="abs-center" id="color" name="color">
                 </div>
+
                 <br>
-                
-                
+
                 <div class="abs-center">
                 <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date" id="fecha" name="fecha">
