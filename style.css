@@ -1,4 +1,4 @@
-/* Estilos Generales */
+/* Estilos Generales NUEVOS */
 * {
     box-sizing: border-box;
     margin: 0 ;
@@ -9,11 +9,9 @@
  p {
     font-size: 14px;
     color: black;
-    
 }
 .contenedor, body {
     margin: 0;
-    padding: 0;
     width: 100%;
     background-color: #4f5554;
 }
@@ -22,10 +20,11 @@ body {
 }
 /* Estilos del header  */
 .logo h2 {
-    padding: 10px 10px 0 10px;
+    padding: 10px;
     margin: 0;
     text-align: start;
     font-family: 'Dancing Script', cursive;
+    font-size: 30px; 
 }
 .contenedor nav {
     margin: 10px;
@@ -45,7 +44,6 @@ body {
 footer{
     width: 100%;
     margin:0;
-    padding: 0;
     overflow:hidden;
     text-align: center;
     position: fixed;
@@ -79,9 +77,9 @@ footer{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 81.5vh;
-    width: 100%;
-    background-image: url("bici-fondo3.jpg") ;
+    height:90vh;
+    width: 100%; 
+    background-image: url("bici-fondo.jpg") ;
     opacity:0.9;
     background-repeat: no-repeat;
     background-position: reverse;
@@ -114,19 +112,31 @@ footer{
 .nosotros {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    margin: 10px;
-    padding: 10px;
-}
-/*Ubicacion*/
-.mapa {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 20px;
     text-align: center;
     align-items: center;
-    position: absolute;
-    margin: 100px 20px;
+    margin: 10px;
+    padding: 10px;
+   
+}
+.nosotros-img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border: solid 10px;
+    box-shadow: 10px 10px rgba(9, 2, 2, 0.5);
+}
+
+/*Ubicacion*/
+.mapa { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#626867; 
+    padding-top: 10%;
 }
 .mapa > iframe {
     margin: 10px;
@@ -141,7 +151,7 @@ footer{
     
 }
 .item{
-    border-radius: 10px;
+    border-radius: 30px 0;
     background-color: #797a7b;
 }
 .item:hover{
@@ -151,7 +161,7 @@ footer{
     width: 100%;
     height: 75vw;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    border-radius: 30px 0 30px 0;
     transition: all .5s;
 }
 .item figure{
@@ -166,8 +176,12 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    line-height: 15px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .precio{
+    margin-top: -20px;
     font-size: 18px;
     font-weight: 900;
 }
@@ -178,13 +192,13 @@ footer{
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+    margin-top: -20px;
+}
+.info-product button:hover{
+    background-color: #2173ed;
+    transition:0.5s
 }
 /*Contacto*/
-.titulo-formulario {
-    text-align: center;
-    background-color: #626867;
-    padding: 30px;
-}
 .formulario {
     padding: 0 30%;
     background-color:  #626867;
@@ -236,31 +250,45 @@ b {
         grid-template-columns: 33% 33%;
         grid-auto-rows: max-content;
         height: 10px;
+        justify-content: center;
+        
     }
     .item img{
         width: 100%;
         height: 5%;
         object-fit: cover;
-        border-radius: 10px 10px 0 0;
+        border-radius: 40px 0 0px 0;
         transition: all .5s;
     }
-        
+    .item{
+        border-radius: 40px 0;
+        background-color: #797a7b;
+        }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1000px) {
+ /*Generales*/
+     h2  h3  h4 {
+        font-size: large;
+    }
  /*Tienda*/
     .container-items { 
         display: grid;
         grid-template-columns: 33% 33% 33%;
         height: 10px;
         align-items: center;
+        padding: 15px 30px; 
     }
-    .item img{
+    .item img {
+        display: flex;
         width: 100%;
-        height: 5%;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
+        object-fit:contain;
+        border-radius: 50px 0 0 0;
         transition: all .5s;
+    }
+    .item{
+    border-radius: 50px 0;
+    background-color: #797a7b;
     }
    /*Home*/ 
     #hero {
@@ -271,4 +299,14 @@ b {
         padding: 0;
 
      }
+     /*Sobre nosotros*/
+     .nosotros-img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 90vh;
+        border: solid 10px;
+        box-shadow: 10px 10px rgba(9, 2, 2, 0.5);
+    }
 }
