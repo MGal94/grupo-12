@@ -117,6 +117,21 @@ footer{
     text-align: justify;
     margin: 10px;
     padding: 10px;
+    background-image: url("bici-fondo.jpg");
+    opacity:0.9;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    position: relative;
+    -webkit-text-stroke: 0.7px black;
+}
+.nosotros p, h2,b{
+    text-align: center;
+    font-size: 30px;
+    color:#85a0db;
+    text-decoration: dotted;
 }
 
 /*Ubicacion*/
