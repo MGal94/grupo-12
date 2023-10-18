@@ -136,8 +136,8 @@ footer{
 
 /*Ubicacion*/
 .mapa {
-    display: grid;
-    grid-template-columns: auto;
+    display: flexbox;
+    flex: center;
     gap: 20px;
     text-align: center;
     align-items: center;
