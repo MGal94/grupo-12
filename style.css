@@ -203,3 +203,47 @@ footer{
     padding: 15px 10px;
     cursor: pointer;
 }
+
+/*Contacto*/
+.formulario {
+    padding: 0 30%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
+
+.row>* {
+    flex-shrink: 15;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+
+b {
+    text-align: center;
+}
+.card {
+    text-align: center;
+}
