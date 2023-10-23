@@ -79,7 +79,7 @@ footer{
     flex-direction: column;
     height:90vh;
     width: 100%; 
-    background-image: url("bici-fondo.jpg") ;
+    background-image: url("bici-fondo3.jpg") ;
     opacity:0.9;
     background-repeat: no-repeat;
     background-position: reverse;
@@ -292,6 +292,11 @@ b {
     }
    /*Home*/ 
     #hero {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 90vh;
         width: 100%;
         background-image: url("bici-fondo3.jpg") ;
         opacity:0.9;
