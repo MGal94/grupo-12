@@ -21,7 +21,7 @@ body {
 }
 /* Estilos del header  */
 header {
-    background-color:#4f5554
+    background-color:#4f5554;
 }
 .logo h2 {
     padding: 10px;
@@ -31,9 +31,9 @@ header {
     font-size: 30px; 
 }
 .contenedor nav {
-    margin: 10px;
     display: flex;
     flex-direction: row;
+    padding: 0 0 5px 5px;
 }
 .link a {
     background-color: #2173ed;
@@ -136,6 +136,10 @@ footer{
 }
 
 /*Ubicacion*/
+.contenido {
+    display: grid;
+    grid-template-columns: auto;   
+}
 .mapa { 
     display: flex;
     flex-direction: column;
@@ -143,28 +147,22 @@ footer{
     text-align: center;
     justify-content: center;
     background-color:#626867; 
-    padding-top: 10%;
+    padding-top: 5%;
 }
-.mapa > iframe {
-    margin: 10px;
-}
-.clima {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5% 0 5%;
-}
+
 .clima h4 {
     margin: auto;
     padding-bottom: 15px;
 }
 
+
 /*Tienda*/
 .container-items{
     display: grid;
+    grid-template-columns: auto;
     grid-template-columns: 1fr;
     gap: 1.1rem;
     padding: 15px 30px; 
-    
 }
 .item{
     border-radius: 30px;
@@ -273,7 +271,6 @@ b {
         grid-auto-rows: max-content;
         height: 10px;
         justify-content: center;
-        
     }
     .item img{
         width: 100%;
