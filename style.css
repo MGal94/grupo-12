@@ -10,15 +10,19 @@
     font-size: 14px;
     color: black;
 }
-.contenedor, body {
+.contenedor {
     margin: 0;
     width: 100%;
-    background-color: #4f5554;
 }
 body {
-    background-color: #626867;
+    margin: 0;
+    width: 100%;
+    background-color:#626867 ;;
 }
 /* Estilos del header  */
+header {
+    background-color:#4f5554
+}
 .logo h2 {
     padding: 10px;
     margin: 0;
@@ -143,6 +147,15 @@ footer{
 }
 .mapa > iframe {
     margin: 10px;
+}
+.clima {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 0 5%;
+}
+.clima h4 {
+    margin: auto;
+    padding-bottom: 15px;
 }
 
 /*Tienda*/
