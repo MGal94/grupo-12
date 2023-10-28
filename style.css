@@ -15,9 +15,11 @@
     width: 100%;
 }
 body {
-    margin: 0;
+    margin: 0 0 45px 0;
     width: 100%;
-    background-color:#626867 ;;
+    background-color:#626867 ;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* Estilos del header  */
 header {
@@ -44,6 +46,10 @@ header {
     font-size: 12px;
     border-radius: 10px 0;
 }
+.link a:hover {
+    background-color: #0d58f9;
+    transition: 01s;
+}
 /* Estilos footer y redes */
 footer{
     width: 100%;
@@ -53,6 +59,7 @@ footer{
     position: fixed;
     bottom: 0;
     background-color: #4f5554;
+    margin-top: auto;
 }
 .redes{
     display: flex;
@@ -73,6 +80,10 @@ footer{
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,.5);
     margin: 0 5px;
+}
+.redes a:hover {
+    background-color: #0d58f9;
+    transition: 01s;
 }
 /* Estilos de home */
 #hero {
@@ -110,7 +121,8 @@ footer{
     text-decoration: none;
 }
 .boton_tienda a:hover {
-    color: #80a8ff;
+    background-color: #0d58f9;
+    transition: 01s;
     } 
 /*Sobre Nosotros*/
 .nosotros {
@@ -149,13 +161,20 @@ footer{
     background-color:#626867; 
     padding-top: 5%;
 }
-
-.clima h4 {
-    margin: auto;
-    padding-bottom: 15px;
+.mapa-google {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
-
-
+.clima h4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 5px 0 ;
+    
+}
 /*Tienda*/
 .container-items{
     display: grid;
@@ -217,7 +236,6 @@ footer{
     padding: 0 30%;
     background-color:  #626867;
 }
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -267,7 +285,7 @@ b {
     /*Tienda*/
     .container-items { 
         display: grid;
-        grid-template-columns: 33% 33%;
+        grid-template-columns: 33% 33% 33%;
         grid-auto-rows: max-content;
         height: 10px;
         justify-content: center;
@@ -283,6 +301,9 @@ b {
         border-radius: 40px 0;
         background-color: #797a7b;
         }
+    .mapa {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -294,7 +315,7 @@ b {
     .container-items { 
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        height: 10px;
+        height: 5px;
         align-items: center;
         padding: 15px 30px; 
     }
