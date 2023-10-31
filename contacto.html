@@ -73,21 +73,20 @@
           <div class="formulario__grupo" id="grupo__consulta">
             <label for="consulta" class="formulario__label">Consulta</label>
             <div class="formulario__grupo-input">
-              <input type="text" class="formulario__input" name="consulta" id="consulta" placeholder="Ingrese su consulta...">
+              <input type="text" class="formulario__input" name="consulta" id="consulta" placeholder="Ingrese su consulta..." rows="4" cols="150" maxlength="300">
             </div>
           </div>
-    
-      	  <!-- Grupo: Terminos y Condiciones -->
-		    	<div class="formulario__grupo" id="grupo__terminos">
-			  	<label class="formulario__label">
-					  <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-             Acepto los Terminos y Condiciones
-          </label>
-			    </div>
 
 			    <div class="formulario__mensaje" id="formulario__mensaje">
-				  <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-			    </div>
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+          </div>
+          <!-- Grupo: Terminos y Condiciones -->
+          <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              Acepto los Terminos y Condiciones
+            </label>
+          </div>
 
 			    <div class="formulario__grupo formulario__grupo-btn-enviar">
 				  <button type="submit" class="formulario__btn">Enviar</button>
